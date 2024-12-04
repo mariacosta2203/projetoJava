@@ -19,7 +19,7 @@ public class ExercicioTres {
 		idade = leia.nextInt();
 		
 		System.out.println("Você já fez uma doação?");
-		doacao = leia.hasNext();
+		doacao = leia.nextBoolean();
 		
 		if(idade >= 18 && idade <= 59) {
 			
