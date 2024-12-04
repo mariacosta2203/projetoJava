@@ -1,4 +1,4 @@
-package exerciciosIntroducao;
+package introducao.exerciciosIntroducao;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package exercicios_estrutura_decisao;
+package estrutura_decisao.exercicios_estrutura_decisao;
 
 import java.util.Scanner;
 
