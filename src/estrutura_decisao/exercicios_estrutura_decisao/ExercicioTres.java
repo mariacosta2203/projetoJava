@@ -8,8 +8,7 @@ public class ExercicioTres {
 		
 		String nome;
 		int idade;
-		boolean doacao = true;
-		boolean doacao1 = false;
+		boolean doacao;
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.println("Insira seu nome: ");
@@ -18,20 +17,20 @@ public class ExercicioTres {
 		System.out.println("Insira sua idade: ");
 		idade = leia.nextInt();
 		
-		System.out.println("Você já fez uma doação?");
+		System.out.println("É a primeira doação?");
 		doacao = leia.nextBoolean();
 		
 		if(idade >= 18 && idade <= 59) {
 			
 			System.out.println("Pode doar");
 			
-		}if(doacao == true && idade >= 60 && idade <= 69) {
-			
-			System.out.println("Não pode doar");
-			
-		}if(!doacao1 && idade >=60 && idade <= 69) {
+		}else if(doacao == false && idade >= 60 && idade <= 69) {
 			
 			System.out.println("Pode doar");
+			
+		}else {
+			
+			System.out.println("Não pode doar");
 			
 		}
 		
