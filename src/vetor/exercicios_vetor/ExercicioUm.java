@@ -22,8 +22,6 @@ public class ExercicioUm {
 				mudar = true;
 			}
 			
-			
-			
 		}
 		
 		if(mudar != true) {
