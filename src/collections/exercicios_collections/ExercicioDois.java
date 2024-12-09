@@ -11,7 +11,7 @@ public class ExercicioDois {
 		        ArrayList<Integer> numeros = new ArrayList<>();
 		        Scanner scanner = new Scanner(System.in);
 
-		        // Inicializar o ArrayList com 10 números inteiros
+		       
 		        System.out.println("Digite 10 números inteiros para inicializar a lista:");
 		        for (int i = 0; i < 10; i++) {
 		            System.out.print("Número " + (i + 1) + ": ");

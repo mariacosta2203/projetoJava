@@ -1,41 +1,36 @@
 package vetor.exercicios_vetor;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class ExercicioUm {
 
 	public static void main(String[] args) {
-		        
-		        ArrayList<String> cores = new ArrayList<>();
-		        Scanner scanner = new Scanner(System.in);
 
-		    
-		        System.out.println("Digite 5 cores:");
-		        for (int i = 0; i < 5; i++) {
-		            System.out.print("Cor " + (i + 1) + ": ");
-		            String cor = scanner.nextLine();
-		            cores.add(cor);
-		        }
+		int i, numero;
+		boolean mudar = false;
 
-		        // Mostrar todas as cores adicionadas
-		        System.out.println("\nCores adicionadas:");
-		        for (String cor : cores) {
-		            System.out.println(cor);
-		        }
+		int num[] = { 2, 7, 3, 8, 9, 1, 4, 5, 6, 10 };
+		Scanner leia = new Scanner(System.in);
 
-		        // Ordenar as cores em ordem crescente
-		        Collections.sort(cores);
+		
+		System.out.println("Digite o número: ");
+		numero = leia.nextInt();
+		
+		for (i = 0; i < 10; i++) {
+			if(numero == num[i]) {
+				System.out.println("O número " + num[i] + " está localizado na posição: " + i);
+				mudar = true;
+			}
+			
+		}
+		
+		if(mudar != true) {
+			System.out.println("O " +numero+ " não foi encontrado");
+		}
 
-		        // Mostrar as cores ordenadas
-		        System.out.println("\nCores em ordem crescente:");
-		        for (String cor : cores) {
-		            System.out.println(cor);
-		        }
+		
 
-		        scanner.close();
-		    }
+		leia.close();
+	}
+
 }
-
-
